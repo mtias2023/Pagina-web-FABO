@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FABO - Comunidad de Fútbol</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- favicon -->
+    <link rel="icon" href="img/icono-universo.png">
+
+</head>
+
+<body class="bg-gray-100">
+    <!-- Barra de navegación -->
+    <header class="bg-gray-100 py-4 w-full">
+  <div class="max-w-screen-xl mx-auto flex justify-between items-center px-6">
+    <!-- Logo -->
+    <div class="flex items-center">
+      <img src="img/logo.png" alt="FABO Logo" class="h-10">
+    </div>
+
+    <!-- Enlaces navegación desktop -->
+    <nav class="hidden lg:flex gap-8">
+      <a href="#inicio" class="hover:text-cyan-500">Inicio</a>
+      <a href="#nosotros" class="hover:text-cyan-500">Nosotros</a>
+      <a href="#como-funciona" class="hover:text-cyan-500">Cómo funciona</a>
+      <a href="#comunidad" class="hover:text-cyan-500">Comunidad</a>
+      <a href="#preguntas-frecuentes" class="hover:text-cyan-500">Preguntas Frecuentes</a>
+      <a href="#contacto" class="hover:text-cyan-500">Contacto</a>
+    </nav>
+
+    <!-- Botón "Unirme Ahora" solo visible en desktop -->
+    <a href="https://wa.me/5491130603771?text=Quiero%20unirme%20a%20la%20comunidad%20de%20FABO" target="_blank" rel="noopener noreferrer"
+       class="hidden lg:flex bg-cyan-500 text-white font-semibold text-base py-2 px-4 rounded-full shadow items-center gap-2 hover:bg-cyan-600 hover:scale-105 transition duration-200">
+      <i class="fab fa-whatsapp text-xl"></i>
+      <span>Unirme Ahora</span>
+    </a>
+
+    <!-- Botón hamburguesa (visible solo en mobile/tablet) -->
+    <button class="lg:hidden text-black" id="menu-toggle">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <nav id="mobile-menu" class="hidden lg:hidden bg-gray-100 px-6 py-4">
+  <ul class="flex flex-col gap-4 text-left">
+    <li><a href="#inicio" class="hover:text-cyan-500 block">Inicio</a></li>
+    <li><a href="#nosotros" class="hover:text-cyan-500 block">Nosotros</a></li>
+    <li><a href="#como-funciona" class="hover:text-cyan-500 block">Cómo funciona</a></li>
+    <li><a href="#comunidad" class="hover:text-cyan-500 block">Comunidad</a></li>
+    <li><a href="#preguntas-frecuentes" class="hover:text-cyan-500 block">Preguntas Frecuentes</a></li>
+    <li><a href="#contacto" class="hover:text-cyan-500 block">Contacto</a></li>
+    
+    <!-- Botón CTA al final -->
+    <li class="mt-4">
+      <a href="https://wa.me/5491130603771?text=Quiero%20unirme%20a%20la%20comunidad%20de%20FABO" target="_blank" rel="noopener noreferrer"
+         class="w-full block bg-cyan-500 text-white font-semibold text-base py-2.5 px-4 rounded-full shadow text-center hover:bg-cyan-600 transition duration-200">
+        <i class="fab fa-whatsapp text-lg mr-2"></i>Unite ahora
+      </a>
+    </li>
+  </ul>
+</nav>
+</header>
+
+    <main>
+        <!-- Sección Inicio -->
+        <section id="inicio" class="text-white py-20 px-6 text-center" style="background-color: #22d3ee;">
+            <div class="max-w-3xl mx-auto">
+            <p class="text-xl font-medium mb-4">Tu partido empieza acá</p>
+            <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+                Jugá al fútbol cuando quieras
+            </h1>
+            <p class="text-lg md:text-xl mb-10">
+                Sumate a FABO y formá parte de la comunidad amateur más activa de Buenos Aires.
+            </p>
+            <div class="flex justify-center flex-wrap gap-4">
+                <!-- Botón WhatsApp -->
+                <a href="https://wa.me/5491130603771?text=Quiero%20unirme%20a%20la%20comunidad%20de%20FABO" target="_blank" rel="noopener noreferrer"
+                    class="bg-white text-cyan-600 font-semibold text-base py-2.5 px-5 rounded-full shadow flex items-center justify-center gap-2 hover:bg-gray-100 hover:scale-105 transition duration-200">
+                    <i class="fab fa-whatsapp text-xl"></i>
+                    <span>Unirme ahora</span>
+                 </a>
+
+                <!-- Botón Contacto -->
+                <a href="#contacto"
+                    class="border-2 border-white text-white font-semibold text-base py-2.5 px-5 rounded-full hover:bg-white hover:text-cyan-600 hover:scale-105 transition duration-200">
+                Contactanos
+                </a>
+            </div>
+            </div>
+        </section>
+
+      <!-- Sección Nosotros -->
+      <section id="nosotros" class="bg-white py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+    
+      <!-- Parte derecha: texto -->
+      <div class="md:w-1/2">
+      <h2 class="text-3xl font-bold text-cyan-500 mb-4 md:text-left text-center">¿Qué es FABO?</h2>
+
+      <!-- Párrafos siempre alineados a la izquierda -->
+      <div class="text-left">
+        <p class="text-gray-700 text-lg mb-6">
+          FABO es una comunidad que organiza partidos de fútbol presenciales para que puedas jugar, conocer gente y disfrutar del deporte que amás. Nos enfocamos en la buena onda, el respeto en la cancha y la pasión por el juego.
+        </p>
+        <p class="text-gray-700 text-lg mb-6">
+          No importa tu nivel: organizamos todo para que solo vengas a disfrutar. Acá lo importante es compartir la pasión por el fútbol y pasarla bien.
+        </p>
+
+        <!-- Botón centrado solo en móviles/tablets -->
+        <div class="md:text-left text-center">
+          <a href="https://wa.me/5491130603771?text=Quiero%20unirme%20a%20la%20comunidad%20de%20FABO" target="_blank" rel="noopener noreferrer"
+             class="inline-block bg-cyan-500 text-white font-semibold text-base py-3 px-6 rounded-full shadow hover:bg-cyan-600 transition duration-200">
+            Sumate a la comunidad
+          </a>
+        </div>
+      </div>
+    </div>
+        <div class="md:w-1/2 flex justify-center">
+          <img src="img/celular.png"
+           alt="Mockup celular FABO"
+           class="w-[350px] h-auto object-contain drop-shadow-xl">
+     </div>
+    </div>
+  </section>
+
+      <!-- Sección Cómo Funciona -->
+<section id="como-funciona" class="bg-white py-12 px-6">
+  <div class="max-w-6xl mx-auto flex flex-col items-center gap-10">
+
+    <!-- Título centrado -->
+    <h2 class="text-3xl font-bold text-cyan-500 text-center">
+      ¿Cómo funciona?
+    </h2>
+
+    <!-- Video centrado con proporción 16:9 -->
+    <div class="w-full flex justify-center">
+      <div class="w-full max-w-7xl aspect-video rounded-xl overflow-hidden shadow-lg">
+        <iframe 
+          src="https://www.youtube.com/embed/t4Fn_4frHk4?si=P_K0aAfLHbo_1Q4Q" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen 
+          class="w-full h-full">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Texto alineado a la izquierda y con emojis cyan -->
+<div class="w-full max-w-7xl text-left">
+  <p class="text-gray-700 text-lg mb-6">
+    Sumarte a <strong>FABO</strong> es fácil, rápido y sin vueltas. Solo seguí estos pasos:
+  </p>
+
+  <ul class="space-y-6 mb-6">
+    <li class="flex items-start gap-3">
+      <span class="text-cyan-500 text-2xl mt-1">✅</span>
+      <div>
+        <strong class="text-gray-900">Entrá al grupo de WhatsApp</strong><br>
+        Elegí tu zona y unite al grupo para recibir todas las novedades.
+      </div>
+    </li>
+    <li class="flex items-start gap-3">
+      <span class="text-cyan-500 text-2xl mt-1">📋</span>
+      <div>
+        <strong class="text-gray-900">Confirmá tu asistencia</strong><br>
+        Vas a ver una encuesta antes de cada partido. Marcá si vas y listo.
+      </div>
+    </li>
+    <li class="flex items-start gap-3">
+      <span class="text-cyan-500 text-2xl mt-1">📍</span>
+      <div>
+        <strong class="text-gray-900">Acercate a jugar</strong><br>
+        Recibís la dirección exacta y el horario. Solo tenés que presentarte.
+      </div>
+    </li>
+    <li class="flex items-start gap-3">
+      <span class="text-cyan-500 text-2xl mt-1">🤝</span>
+      <div>
+        <strong class="text-gray-900">Jugá y conocé gente nueva</strong><br>
+        Compartimos la pasión por el fútbol con buena onda y sin presiones.
+      </div>
+    </li>
+  </ul>
+
+  <p class="text-gray-700 text-lg">
+    Nosotros nos ocupamos de todo. Vos solo traé los botines y las ganas de divertirte ⚽
+  </p>
+</div>
+
+  </div>
+</section>
+
+        <!-- Sección Comunidad -->
+<section id="comunidad" class="bg-cyan-400 py-20 px-6">
+  <div class="max-w-7xl mx-auto text-center px-4 py-10">
+  <h2 class="text-3xl font-bold text-white mb-4">Galería de nuestras sedes</h2>
+  <p class="text-white text-lg max-w-3xl mx-auto">
+    Descubrí los lugares donde jugamos y compartimos la pasión por el fútbol. Cada sede tiene su estilo y su gente, ¡conocelos en estas fotos!
+  </p>
+</div>
+
+   <!-- Galería de imágenes -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-7xl mx-auto px-4">
+
+  <!-- Card 1 -->
+  <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+    <img src="img/futbol01.jpg" alt="Partido 1" class="w-full h-72 object-cover hover:scale-105 transition-transform duration-300">
+    <div class="p-4">
+      <h3 class="text-center text-cyan-500 font-bold text-lg">Sede: LINIERS</h3>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+    <img src="img/futbol02.jpg" alt="Partido 2" class="w-full h-72 object-cover hover:scale-105 transition-transform duration-300">
+    <div class="p-4">
+      <h3 class="text-center text-cyan-500 font-bold text-lg">Sede: FLORES</h3>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+    <img src="img/futbol3.jpg" alt="Partido 3" class="w-full h-72 object-cover hover:scale-105 transition-transform duration-300">
+    <div class="p-4">
+      <h3 class="text-center text-cyan-500 font-bold text-lg">Sede: CABALLITO</h3>
+    </div>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+    <img src="img/futbol4.jpg" alt="Partido 4" class="w-full h-72 object-cover hover:scale-105 transition-transform duration-300">
+    <div class="p-4">
+      <h3 class="text-center text-cyan-500 font-bold text-lg">Sede: PARQUE PATRICIOS</h3>
+    </div>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+    <img src="img/futbol5.jpg" alt="Partido 5" class="w-full h-72 object-cover hover:scale-105 transition-transform duration-300">
+    <div class="p-4">
+      <h3 class="text-center text-cyan-500 font-bold text-lg">Sede: SAN CRISTOBAL</h3>
+    </div>
+  </div>
+
+  <!-- Card 6 -->
+  <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+    <img src="img/futbol6.jpg" alt="Partido 6" class="w-full h-72 object-cover hover:scale-105 transition-transform duration-300">
+    <div class="p-4">
+      <h3 class="text-center text-cyan-500 font-bold text-lg">Sede: PALERMO</h3>
+    </div>
+  </div>
+
+</div>
+
+    <!-- Instagram o llamado a la acción -->
+    <p class="text-white text-base text-center mt-10">
+      Seguinos en Instagram para ver más
+      <a href="https://www.instagram.com/fabo.oficial2025" target="_blank" class="text-black font-semibold hover:underline">
+        @fabo.oficial2025
+      </a>
+    </p>
+  </div>
+</section>
+
+        <!-- Preguntas Frecuentes -->
+<section id="preguntas-frecuentes" class="py-20 px-6 bg-white">
+  <div class="max-w-4xl mx-auto text-center mb-10">
+    <h2 class="text-3xl font-bold text-cyan-500 mb-4">Preguntas Frecuentes</h2>
+    <p class="text-gray-600">Respondemos tus dudas más comunes sobre la comunidad FABO</p>
+  </div>
+
+  <div class="max-w-4xl mx-auto space-y-4">
+    <!-- FAQ 1 -->
+    <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+      <button onclick="toggleFAQ(1)" class="w-full flex justify-between items-center p-5 text-left">
+        <span class="text-lg md:text-xl font-semibold text-black">¿Tiene algún costo participar?</span>
+        <svg id="icon-1" class="w-6 h-6 text-cyan-500 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+      <div id="faq-1" class="hidden px-5 pb-5 text-gray-600">
+        <p>No tenemos costo de inscripción ni membresía. Solo abonás tu parte del partido: el valor de la cancha.</p>
+      </div>
+    </div>
+
+    <!-- FAQ 2 -->
+    <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+      <button onclick="toggleFAQ(2)" class="w-full flex justify-between items-center p-5 text-left">
+        <span class="text-lg md:text-xl font-semibold text-black">¿Qué pasa si me anoto y no voy?</span>
+        <svg id="icon-2" class="w-6 h-6 text-cyan-500 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+      <div id="faq-2" class="hidden px-5 pb-5 text-gray-600">
+        <p>Pedimos responsabilidad: si te sumás a un partido y no avisás con al menos <b>4 horas</b> de anticipación que no podés venir, igualmente se te cobra tu parte de la cancha.</p>
+      </div>
+    </div>
+
+    <!-- FAQ 3 -->
+    <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+      <button onclick="toggleFAQ(3)" class="w-full flex justify-between items-center p-5 text-left">
+        <span class="text-lg md:text-xl font-semibold text-black">¿Cómo me uno a la comunidad?</span>
+        <svg id="icon-3" class="w-6 h-6 text-cyan-500 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+      <div id="faq-3" class="hidden px-5 pb-5 text-gray-600">
+        <p>Entrá a <strong>“Unite ahora”</strong> y escribinos por WhatsApp con: <em>“Quiero unirme a la comunidad de FABO”</em>. Te sumamos al grupo y listo.</p>
+      </div>
+    </div>
+
+    <!-- FAQ 4 -->
+    <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+      <button onclick="toggleFAQ(4)" class="w-full flex justify-between items-center p-5 text-left">
+        <span class="text-lg md:text-xl font-semibold text-black">¿Puedo invitar amigos?</span>
+        <svg id="icon-4" class="w-6 h-6 text-cyan-500 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+      <div id="faq-4" class="hidden px-5 pb-5 text-gray-600">
+        <p>¡Claro! Mientras haya cupo, pueden sumarse. Compartiles el link de WhatsApp para que confirmen su asistencia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+       
+       <!-- Sección Contacto -->
+<section id="contacto" class="bg-white py-20 px-6 text-center">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-3xl font-bold text-cyan-500 mb-4">¿Tenés dudas o querés hablar con nosotros?</h2>
+    
+    <p class="text-gray-700 text-lg mb-8">
+      Si querés sumarte, organizar un partido o saber más sobre FABO, escribinos y te respondemos al toque.
+    </p>
+
+    <!-- Botón CTA con mensaje predefinido de WhatsApp -->
+    <a href="https://wa.me/5491130603771?text=Quiero%20unirme%20a%20la%20comunidad%20de%20FABO" target="_blank" rel="noopener noreferrer"
+       class="inline-flex items-center justify-center gap-2 bg-cyan-500 text-white font-semibold text-base py-3 px-6 rounded-full shadow-md hover:bg-cyan-600 hover:scale-105 transition-transform duration-200">
+      <i class="fab fa-whatsapp text-xl"></i>
+      <span>Unirme ahora</span>
+    </a>
+
+
+    <!-- Contacto adicional -->
+    <p class="mt-6 text-sm text-gray-600">
+      También podés escribirnos a 
+      <a href="mailto:fabo.contacto@gmail.com" class="text-cyan-600 underline hover:text-cyan-700">
+        fabo.contacto@gmail.com
+      </a>
+    </p>
+  </div>
+</section>
+
+    </main>
+    
+    <footer class="bg-cyan-400 text-white py-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Columna 1: Sobre nosotros -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Sobre Nosotros</h3>
+                    <p>FABO es una comunidad que organiza partidos de fútbol presenciales para que puedas jugar, conocer gente y disfrutar del deporte que amás.
+                       ¡Únete a nuestra comunidad!</p>
+                </div>
+                <!-- Columna 2: Enlaces rápidos -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Enlaces Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio" class="hover:text-gray-300 transition-colors">Inicio</a></li>
+                        <li><a href="#nosotros" class="hover:text-gray-300 transition-colors">Nosotros</a></li>
+                        <li><a href="#como-funciona" class="hover:text-gray-300 transition-colors">Cómo Funciona</a></li>
+                        <li><a href="#comunidad" class="hover:text-gray-300 transition-colors">Comunidad</a></li>
+                        <li><a href="#preguntas-frecuentes" class="hover:text-gray-300 transition-colors">Preguntas Frecuentes</a></li>
+                        <li><a href="#contacto" class="hover:text-gray-300 transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+                <!-- Columna 3: Síguenos -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Síguenos</h3>
+                    <p class="mb-4">Conecta con nosotros en nuestras redes sociales:</p>
+                <div class="flex space-x-4 text-white">
+                  <!-- Instagram -->
+                  <a href="https://www.instagram.com/fabo.oficial2025" target="_blank" class="hover:text-cyan-500 transition-colors" aria-label="Instagram">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm4.25 5.25a4.75 4.75 0 100 9.5 4.75 4.75 0 000-9.5zm6.5-.25a1 1 0 11-2 0 1 1 0 012 0zM12 9.25a2.75 2.75 0 110 5.5 2.75 2.75 0 010-5.5z"/>
+                    </svg>
+                  </a>
+
+                  <!-- Facebook -->
+                  <a href="https://www.facebook.com/share/1FD7z8xcis/?mibextid=qi2Omg" target="_blank" class="hover:text-cyan-500 transition-colors" aria-label="Facebook">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M22 12a10 10 0 10-11.6 9.87v-6.99H8v-2.88h2.4V9.41c0-2.38 1.42-3.7 3.6-3.7 1.04 0 2.13.19 2.13.19v2.34h-1.2c-1.18 0-1.55.74-1.55 1.5v1.8h2.64l-.42 2.88H13.4v6.99A10 10 0 0022 12z"/>
+                    </svg>
+                  </a>
+
+                  <!-- TikTok -->
+                  <a href="https://www.tiktok.com/@fabo_oficial_?is_from_webapp=1&sender_device=pc" target="_blank" class="hover:text-cyan-500 transition-colors" aria-label="TikTok">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M9.75 2h4.2c.2 1.54 1.42 3.12 3.4 3.38v3.05c-1.38-.07-2.6-.52-3.58-1.33v6.83c0 3.3-2.57 5.87-5.87 5.87A5.87 5.87 0 012 13.93c0-3.25 2.54-5.81 5.77-5.87v3.08a2.8 2.8 0 000 5.6c1.54 0 2.8-1.26 2.8-2.8V2z"/>
+                    </svg>
+                  </a>
+
+                  <!-- YouTube -->
+                  <a href="https://youtube.com/@fabo-comunidaddefutbol?si=Gz5VJgCG78IxKLLN" target="_blank" class="hover:text-cyan-500 transition-colors" aria-label="YouTube">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M23.5 6.2a2.8 2.8 0 00-2-2C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.5.6a2.8 2.8 0 00-2 2A29.7 29.7 0 000 12a29.7 29.7 0 00.5 5.8 2.8 2.8 0 002 2c2 .6 9.5.6 9.5.6s7.5 0 9.5-.6a2.8 2.8 0 002-2A29.7 29.7 0 0024 12a29.7 29.7 0 00-.5-5.8zM9.75 15.5v-7l6.75 3.5-6.75 3.5z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Línea divisoria -->
+            <div class="border-t border-white mt-10"></div>
+            <!-- Pie de página -->
+            <div class="flex flex-col md:flex-row justify-between items-center mt-6 text-sm">
+                <p>&copy; 2025 FABO. Todos los derechos reservados.</p>
+                <p>
+                    <a href="#" class="hover:text-gray-300 transition-colors">Política de Privacidad</a> |
+                    <a href="#" class="hover:text-gray-300 transition-colors">Términos de Servicio</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+
+    <!-- Botones flotantes -->
+<div class="fixed bottom-6 right-6 flex flex-col items-center gap-4 z-50">
+
+  <!-- Botón WhatsApp -->
+  <a href="https://wa.me/5491130603771?text=Quiero%20unirme%20a%20la%20comunidad%20de%20FABO" target="_blank" rel="noopener noreferrer"
+     class="bg-green-500 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center hover:bg-green-600 transition duration-200"
+     title="Escribinos por WhatsApp">
+    <i class="fab fa-whatsapp text-2xl"></i>
+  </a>
+
+  <!-- Botón Volver al inicio -->
+  <a href="#inicio"
+     class="bg-cyan-500 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center hover:bg-cyan-600 transition duration-200"
+     title="Volver al inicio">
+    <i class="fas fa-arrow-up text-2xl"></i>
+  </a>
+
+</div>
+</body>
+
+</html>
