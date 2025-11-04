@@ -1,0 +1,4 @@
+select:hover {
+  border-color: #06b6d4; /* cyan-500 */
+  transition: 0.2s;
+}
