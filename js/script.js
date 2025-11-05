@@ -12,7 +12,7 @@ function toggleFAQ(id) {
     icon.classList.toggle("rotate-180");
   }
 
-  // Script para manejar precios y WhatsApp dinámico
+ // Script para manejar precios y WhatsApp dinámico
 
 const numeroWhatsApp = "5491130603771";
 
@@ -21,6 +21,7 @@ const productos = [
     nombre: "Conjunto Oficial FABO (Camiseta + Short)",
     selectId: "telaConjunto",
     talleId: "talleConjunto",
+    numeroId: "numeroConjunto",
     precioId: "precioConjunto",
     botonId: "btnConjunto"
   },
@@ -28,6 +29,7 @@ const productos = [
     nombre: "Camiseta FABO",
     selectId: "telaCamiseta",
     talleId: "talleCamiseta",
+    numeroId: "numeroCamiseta",
     precioId: "precioCamiseta",
     botonId: "btnCamiseta"
   },
@@ -35,6 +37,7 @@ const productos = [
     nombre: "Short FABO",
     selectId: "telaShort",
     talleId: "talleShort",
+    numeroId: "numeroShort",
     precioId: "precioShort",
     botonId: "btnShort"
   }
@@ -43,10 +46,12 @@ const productos = [
 productos.forEach(p => {
   const selectTela = document.getElementById(p.selectId);
   const selectTalle = document.getElementById(p.talleId);
+  const inputNumero = document.getElementById(p.numeroId);
   const precio = document.getElementById(p.precioId);
   const boton = document.getElementById(p.botonId);
 
   if (selectTela && precio && boton && selectTalle) {
+
     const actualizarPrecio = () => {
       const opt = selectTela.options[selectTela.selectedIndex];
       const valor = opt.value;
@@ -60,7 +65,10 @@ productos.forEach(p => {
     const actualizarWhatsApp = () => {
       const tela = selectTela.options[selectTela.selectedIndex].text;
       const talle = selectTalle.value;
-      const mensaje = encodeURIComponent(`Hola FABO! Quiero este producto: ${p.nombre} - Tela ${tela}, Talle ${talle}.`);
+      const numero = inputNumero && inputNumero.value.trim() !== "" ? `, Número ${inputNumero.value}` : "";
+      const mensaje = encodeURIComponent(
+        `Hola FABO! Quiero este producto: ${p.nombre} - Tela ${tela}, Talle ${talle}${numero}.`
+      );
       boton.href = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
     };
 
@@ -73,6 +81,10 @@ productos.forEach(p => {
       actualizarPrecio();
       actualizarWhatsApp();
     });
+
     selectTalle.addEventListener("change", actualizarWhatsApp);
+
+    if (inputNumero) inputNumero.addEventListener("input", actualizarWhatsApp);
   }
 });
+
