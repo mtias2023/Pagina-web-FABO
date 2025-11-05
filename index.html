@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- favicon -->
     <link rel="icon" href="img/icono-universo.png">
@@ -71,29 +72,72 @@
 </header>
 
     <main>
-        <!-- Sección Inicio -->
-        <section id="inicio" class="text-white py-20 px-6 text-center" style="background-color: #22d3ee;">
-            <div class="max-w-3xl mx-auto pt-10">
-            <p class="text-xl font-medium mb-6">Tu partido empieza acá</p>
-            <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-8">
-                Jugá al fútbol cuando quieras
-            </h1>
-            <div class="flex justify-center flex-wrap gap-4">
-                <!-- Botón WhatsApp -->
-                <a href="https://wa.me/5491130603771?text=Quiero%20unirme%20a%20la%20comunidad%20de%20FABO" target="_blank" rel="noopener noreferrer"
-                    class="bg-white text-cyan-600 font-semibold text-base py-2.5 px-5 rounded-full shadow flex items-center justify-center gap-2 hover:bg-gray-100 hover:scale-105 transition duration-200">
-                    <i class="fab fa-whatsapp text-xl"></i>
-                    <span>Unirme ahora</span>
-                 </a>
 
-                <!-- Botón Contacto -->
-                <a href="#contacto"
-                    class="border-2 border-white text-white font-semibold text-base py-2.5 px-5 rounded-full hover:bg-white hover:text-cyan-600 hover:scale-105 transition duration-200">
-                Contactanos
-                </a>
-            </div>
-            </div>
-        </section>
+        <!-- Sección Inicio -->
+<section id="inicio" class="text-white py-20 px-6 text-center" style="background-color: #22d3ee;">
+  <div class="max-w-3xl mx-auto pt-10">
+
+    <p class="text-xl font-medium mb-6">Tu partido empieza acá</p>
+
+    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-8">
+      Jugá al fútbol cuando quieras
+    </h1>
+
+    <div class="flex justify-center flex-wrap gap-4">
+      <!-- Botón WhatsApp -->
+      <a href="https://wa.me/5491130603771?text=Quiero%20unirme%20a%20la%20comunidad%20de%20FABO"
+         target="_blank" rel="noopener noreferrer"
+         class="bg-white text-cyan-600 font-semibold text-base py-2.5 px-5 rounded-full shadow flex items-center justify-center gap-2 hover:bg-gray-100 hover:scale-105 transition duration-200">
+        <i class="fab fa-whatsapp text-xl"></i>
+        <span>Unirme ahora</span>
+      </a>
+
+      <!-- Botón Contacto -->
+      <a href="#contacto"
+         class="border-2 border-white text-white font-semibold text-base py-2.5 px-5 rounded-full hover:bg-white hover:text-cyan-600 hover:scale-105 transition duration-200">
+        Contactanos
+      </a>
+    </div>
+
+    <!-- Redes sociales debajo de los botones -->
+    <div class="flex justify-center mt-8">
+      <div class="flex space-x-6 text-white">
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/fabooficial_" target="_blank" aria-label="Instagram"
+           class="hover:text-gray-800 transition-colors">
+          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm4.25 5.25a4.75 4.75 0 100 9.5 4.75 4.75 0 000-9.5zm6.5-.25a1 1 0 11-2 0 1 1 0 012 0zM12 9.25a2.75 2.75 0 110 5.5 2.75 2.75 0 010-5.5z"/>
+          </svg>
+        </a>
+
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/share/1FD7z8xcis/?mibextid=qi2Omg" target="_blank" aria-label="Facebook"
+           class="hover:text-gray-800 transition-colors">
+          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M22 12a10 10 0 10-11.6 9.87v-6.99H8v-2.88h2.4V9.41c0-2.38 1.42-3.7 3.6-3.7 1.04 0 2.13.19 2.13.19v2.34h-1.2c-1.18 0-1.55.74-1.55 1.5v1.8h2.64l-.42 2.88H13.4v6.99A10 10 0 0022 12z"/>
+          </svg>
+        </a>
+
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@fabooficial_" target="_blank" aria-label="TikTok"
+           class="hover:text-gray-800 transition-colors">
+          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M9.75 2h4.2c.2 1.54 1.42 3.12 3.4 3.38v3.05c-1.38-.07-2.6-.52-3.58-1.33v6.83c0 3.3-2.57 5.87-5.87 5.87A5.87 5.87 0 012 13.93c0-3.25 2.54-5.81 5.77-5.87v3.08a2.8 2.8 0 000 5.6c1.54 0 2.8-1.26 2.8-2.8V2z"/>
+          </svg>
+        </a>
+
+        <!-- YouTube -->
+        <a href="https://youtube.com/@fabo-comunidaddefutbol?si=Gz5VJgCG78IxKLLN" target="_blank" aria-label="YouTube"
+           class="hover:text-gray-800 transition-colors">
+          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M23.5 6.2a2.8 2.8 0 00-2-2C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.5.6a2.8 2.8 0 00-2 2A29.7 29.7 0 000 12a29.7 29.7 0 00.5 5.8 2.8 2.8 0 002 2c2 .6 9.5.6 9.5.6s7.5 0 9.5-.6a2.8 2.8 0 002-2A29.7 29.7 0 0024 12a29.7 29.7 0 00-.5-5.8zM9.75 15.5v-7l6.75 3.5-6.75 3.5z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
       <!-- Sección Nosotros -->
       <section id="nosotros" class="bg-white py-12 px-6">
@@ -445,29 +489,80 @@
       Empresas y marcas que acompañan a nuestra comunidad en el camino del deporte.
     </p>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 items-center">
-      <!-- Sponsor 1 -->
-      <a href="https://www.instagram.com/emevevesa" target="_blank" class="bg-white rounded-3xl shadow-lg hover:shadow-2xl p-8 transition transform hover:-translate-y-2 block">
-        <div class="w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-cyan-400 shadow-md hover:scale-105 transition">
-          <img src="img/logomvv.jpg" alt="MVV Facility Services" class="w-full h-full object-cover">
+    <!-- Carrusel solo en móvil -->
+    <div class="swiper block lg:hidden relative">
+      <div class="swiper-wrapper">
+
+        <!-- Sponsor 1 -->
+        <a href="https://www.instagram.com/emevevesa" target="_blank" class="swiper-slide bg-white rounded-3xl shadow-lg p-8">
+          <div class="w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-cyan-400 shadow-md">
+            <img src="img/logomvv.jpg" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-gray-800 font-semibold text-xl tracking-wide">MVV Facility Services</h3>
+        </a>
+
+        <!-- Sponsor 2 -->
+        <a href="https://www.instagram.com/importstoremym" target="_blank" class="swiper-slide bg-white rounded-3xl shadow-lg p-8">
+          <div class="w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-cyan-400 shadow-md">
+            <img src="img/logomym.jpg" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-gray-800 font-semibold text-xl tracking-wide">IMPORT STORE M&M</h3>
+        </a>
+
+        <!-- Sponsor 3 -->
+        <a href="https://www.instagram.com/pasoapasosport" target="_blank" class="swiper-slide bg-white rounded-3xl shadow-lg p-8">
+          <div class="w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-cyan-400 shadow-md">
+            <img src="img/logopaso.jpg" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-gray-800 font-semibold text-xl tracking-wide">Paso a Paso Sport</h3>
+        </a>
+
+        <!-- Sponsor 4 -->
+        <a href="https://www.instagram.com/maketasstudio" target="_blank" class="swiper-slide bg-white rounded-3xl shadow-lg p-8">
+          <div class="w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-cyan-400 shadow-md">
+            <img src="img/logo-maketa.jpg" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-gray-800 font-semibold text-xl tracking-wide">MAKETA STUDIO</h3>
+        </a>
+
+      </div>
+
+      <!-- Flechas -->
+      <div class="swiper-button-prev custom-swiper-button"></div>
+      <div class="swiper-button-next custom-swiper-button"></div>
+
+      <!-- Puntos -->
+      <div class="swiper-pagination mt-6"></div>
+    </div>
+
+    <!-- Grilla solo en escritorio -->
+    <div class="hidden lg:grid grid-cols-4 gap-12 mt-10">
+      <a href="https://www.instagram.com/emevevesa" target="_blank" class="bg-white rounded-3xl shadow-lg p-8 hover:shadow-2xl">
+        <div class="w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-cyan-400 shadow-md">
+          <img src="img/logomvv.jpg" class="w-full h-full object-cover">
         </div>
         <h3 class="text-gray-800 font-semibold text-xl tracking-wide">MVV Facility Services</h3>
       </a>
 
-      <!-- Sponsor 2 -->
-      <a href="https://www.instagram.com/importstoremym" target="_blank" class="bg-white rounded-3xl shadow-lg hover:shadow-2xl p-8 transition transform hover:-translate-y-2 block">
-        <div class="w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-cyan-400 shadow-md hover:scale-105 transition">
-          <img src="img/logomym.jpg" alt="IMPORT STORE M&M" class="w-full h-full object-cover">
+      <a href="https://www.instagram.com/importstoremym" target="_blank" class="bg-white rounded-3xl shadow-lg p-8 hover:shadow-2xl">
+        <div class="w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-cyan-400 shadow-md">
+          <img src="img/logomym.jpg" class="w-full h-full object-cover">
         </div>
         <h3 class="text-gray-800 font-semibold text-xl tracking-wide">IMPORT STORE M&M</h3>
       </a>
 
-      <!-- Sponsor 3 -->
-      <a href="https://www.instagram.com/pasoapasosport" target="_blank" class="bg-white rounded-3xl shadow-lg hover:shadow-2xl p-8 transition transform hover:-translate-y-2 block">
-        <div class="w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-cyan-400 shadow-md hover:scale-105 transition">
-          <img src="img/logopaso.jpg" alt="Paso a Paso Sport" class="w-full h-full object-cover">
+      <a href="https://www.instagram.com/pasoapasosport" target="_blank" class="bg-white rounded-3xl shadow-lg p-8 hover:shadow-2xl">
+        <div class="w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-cyan-400 shadow-md">
+          <img src="img/logopaso.jpg" class="w-full h-full object-cover">
         </div>
         <h3 class="text-gray-800 font-semibold text-xl tracking-wide">Paso a Paso Sport</h3>
+      </a>
+
+      <a href="https://www.instagram.com/maketasstudio" target="_blank" class="bg-white rounded-3xl shadow-lg p-8 hover:shadow-2xl">
+        <div class="w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-cyan-400 shadow-md">
+          <img src="img/logo-maketa.jpg" class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-gray-800 font-semibold text-xl tracking-wide">MAKETA STUDIO</h3>
       </a>
     </div>
   </div>
@@ -551,11 +646,14 @@
       <span>Unirme ahora</span>
     </a>
 
-    <!-- Contacto adicional -->
     <p class="mt-6 text-sm text-gray-600">
       También podés escribirnos a 
-      <a href="mailto:fabo.contacto@gmail.com" class="text-cyan-600 underline hover:text-cyan-700">
-        fabo.contacto@gmail.com
+      <a 
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=fabooficial2025@gmail.com" 
+        target="_blank" 
+        class="text-cyan-600 underline hover:text-cyan-700"
+      >
+        fabooficial2025@gmail.com
       </a>
     </p>
   </div>
@@ -631,6 +729,9 @@
             </div>
         </div>
     </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 
     <!-- Botones flotantes -->
